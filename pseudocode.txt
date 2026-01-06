@@ -1,0 +1,49 @@
+START
+
+Initialize PIR sensor
+Initialize LDR sensor
+Initialize Temperature sensor
+Initialize Light LED
+Initialize Fan LED
+Initialize Buzzer
+
+Set OFF_DELAY = 10 seconds
+Set lastMotionTime = 0
+
+LOOP forever:
+
+    Read motion from PIR
+    Read lightIntensity from LDR
+    Read temperatureValue from Temperature sensor
+
+    IF motion is detected THEN
+        lastMotionTime = current time
+
+        Activate buzzer briefly   // occupancy alert
+
+        IF lightIntensity indicates DARK THEN
+            Turn Light ON
+        ELSE
+            Turn Light OFF
+        END IF
+
+        IF temperatureValue > temperatureThreshold THEN
+            Turn Fan ON
+            Activate buzzer briefly   // temperature alert
+        ELSE
+            Turn Fan OFF
+        END IF
+
+    ELSE    // no motion detected
+
+        IF (current time - lastMotionTime) > OFF_DELAY THEN
+            Turn Light OFF
+            Turn Fan OFF
+            Turn Buzzer OFF
+        END IF
+
+    END IF
+
+END LOOP
+
+END
