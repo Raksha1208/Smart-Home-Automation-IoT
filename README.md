@@ -25,7 +25,6 @@ This project simulates a smart room automation system using sensors to improve e
 - Code/ – Arduino source code
 - Simulation/ – Circuit & simulation screenshots
 - Documentation/ – Pseudocode & logic
-- Case_Study/ – Detailed project analysis
 
 ## Applications
 - Smart homes
