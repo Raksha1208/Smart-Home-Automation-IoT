@@ -3,6 +3,9 @@
 ## Overview
 This project simulates a smart room automation system using sensors to improve energy efficiency and user comfort.
 
+## 🔗 Tinkercad Simulation Link
+👉 https://www.tinkercad.com/things/5ipEpbK1VqB-home-automation
+
 ## Features
 - Motion-based lighting
 - Light intensity detection using LDR
