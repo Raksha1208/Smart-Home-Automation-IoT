@@ -1,2 +1,31 @@
-# Smart-Home-Automation-IoT
-A sensor-based smart room automation system that controls lighting and cooling using motion, light, and temperature sensors with buzzer alerts and auto OFF delay, simulated in Tinkercad.
+# Smart Room Automation using IoT
+
+## Overview
+This project simulates a smart room automation system using sensors to improve energy efficiency and user comfort.
+
+## Features
+- Motion-based lighting
+- Light intensity detection using LDR
+- Temperature-based fan control
+- Buzzer alerts
+- Auto OFF delay when no motion
+
+## Tools Used
+- Arduino Uno
+- PIR Motion Sensor
+- LDR
+- Temperature Sensor
+- Buzzer
+- Tinkercad Simulator
+
+## Repository Structure
+- Code/ – Arduino source code
+- Simulation/ – Circuit & simulation screenshots
+- Documentation/ – Pseudocode & logic
+- Case_Study/ – Detailed project analysis
+
+## Applications
+- Smart homes
+- Smart classrooms
+- Energy-efficient buildings
+
